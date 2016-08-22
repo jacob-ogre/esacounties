@@ -8,7 +8,7 @@
 #' and curated (checked, completed) by referencing other sources such as
 #' \href{gbif.org}{GBIF} and \href{www.natureserve.org}{NatureServe}.
 #'
-#' @format A data frame with 27768 rows and 15 variables
+#' @format A data frame with 24617 rows and 15 variables
 #' \describe{
 #' \item{\code{Scientific}}{The scientific name of the taxon}
 #' \item{\code{Genus}}{The genus of the taxon}

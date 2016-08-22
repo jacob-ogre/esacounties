@@ -15,4 +15,5 @@ names(data)[9] <- "Common"
 data <- data[, c(1, 13:15, 9:12, 2:8)]
 
 esacounties <- data
+esacounties <- dplyr::distinct(esacounties)
 devtools::use_data(esacounties, overwrite = TRUE)
