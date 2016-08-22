@@ -25,5 +25,5 @@
 #' \item{\code{COUNTYNS}}{The 6- to 7-digit county NS code}
 #' \item{\code{GEOID}}{The 6- to 7-digit county NS code}
 #' }
-#' @source \href{http://ecos.fws.gov}{FWS's ECOS website}
+#' @source Scraped from \href{http://ecos.fws.gov}{FWS's ECOS website}.
 "esacounties"
