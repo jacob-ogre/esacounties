@@ -7,15 +7,16 @@
 #' @seealso \link{get_species}
 #' @export
 #' @examples
-#' get_counties("Ursus horribilis")
+#' get_counties("Ursus arctos horribilis")
 get_counties <- function(species) {
-  return(dplyr::filter(esacounties, Scientific == species))
+  substr(species, 1, 1) <- toupper(substr(species, 1, 1))
+  return(dplyr::filter(esacounties, startsWith(Scientific, species)))
 }
 
 #' List species found in a county or counties
 #'
-#' @param fips FIPS code(s) for the county to query
-#' @param state Either a state name or abbreviation for the query
+#' @param fips list of FIPS code(s) for the county to query
+#' @param state Either a state name or capitalied abbreviation for the query
 #' @param county Name of the county for the query
 #' @return A tibble of state & county-level occurrence data
 #' @seealso \link{get_counties}

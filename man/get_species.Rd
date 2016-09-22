@@ -2,21 +2,26 @@
 % Please edit documentation in R/utils.R
 \name{get_species}
 \alias{get_species}
-\title{List species found in a county}
+\title{List species found in a county or counties}
 \usage{
 get_species(fips = "", state = "", county = "")
 }
 \arguments{
-\item{fips}{FIPS code for the county to query}
+\item{fips}{list of FIPS code(s) for the county to query}
+
+\item{state}{Either a state name or capitalied abbreviation for the query}
+
+\item{county}{Name of the county for the query}
 }
 \value{
 A tibble of state & county-level occurrence data
 }
 \description{
-List species found in a county
+List species found in a county or counties
 }
 \examples{
 get_species(state = "VA", county = "Clarke")
+get_species(fips = "48281")
 }
 \seealso{
 \link{get_counties}
