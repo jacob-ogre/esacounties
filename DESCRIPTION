@@ -2,8 +2,12 @@ Package: esacounties
 Type: Package
 Title: County Occurrence Data for ESA-listed U.S. Species
 Version: 0.2.0
-Authors@R: c(person("Jacob", "Malcom", email = "jmalcom@defenders.org", role = c("aut", "cre")),
-             person("Evans", "Michael", email = "mevans@defenders.org", role = c("aut")))
+Authors@R: c(person("Jacob", "Malcom",
+                    email = "jmalcom@defenders.org",
+                    role = c("aut", "cre")),
+             person("Evans", "Michael",
+                    email = "mevans@defenders.org",
+                    role = c("aut")))
 Description: An R data package, with a small number of helper functions, to
     provide ready access to county (and state) occurrence data for U.S. species
     listed under the Endangered Species Act.
