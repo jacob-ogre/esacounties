@@ -14,6 +14,6 @@ test_that("get_counties returns the correct data", {
 test_that("get_counties is flexible to scientific name input", {
   expect_equal(grizz, get_counties("ursus arctos horribilis"))
   expect_equal(LAblack$Scientific %in% black$Scientific,
-               rep(TRUE,nrow(LAblack)))
+               rep(TRUE, nrow(LAblack)))
 })
 

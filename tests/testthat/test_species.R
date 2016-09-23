@@ -5,7 +5,7 @@ test_that("get_species works with state, county input", {
   tbl_sub <- which(esacounties$State_abbrev == "NY" &
                    esacounties$County_name == "Monroe")
   expect_is(fxn_data, "tbl_df")
-  expect_equal(nrow(fxn_data),length(tbl_sub))
+  expect_equal(nrow(fxn_data), length(tbl_sub))
   expect_equal(fxn_data$GEOID, esacounties$GEOID[tbl_sub])
 })
 
