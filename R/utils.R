@@ -41,7 +41,7 @@ get_species <- function(fips = "", state = "", county = "") {
                            County_name == county)
     }
   } else {
-    stop("Either ≥ 1 fips code or a state-county pair are required.")
+    stop("Either >= 1 fips code or a state-county pair are required.")
   }
   return(res)
 }

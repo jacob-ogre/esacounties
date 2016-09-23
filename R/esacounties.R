@@ -21,6 +21,7 @@
 #' \item{\code{STATEFP}}{The two-digit state FIPS code}
 #' \item{\code{COUNTYFP}}{The three-digit county FIPS code}
 #' \item{\code{County_name}}{Text name of the county of occurrence}
+#' \item{\code{State_abbrev}}{Abbreviation of the State of occurrence}
 #' \item{\code{State_name}}{Text name of the State of occurrence}
 #' \item{\code{COUNTYNS}}{The 6- to 7-digit county NS code}
 #' \item{\code{GEOID}}{The 6- to 7-digit county NS code}
