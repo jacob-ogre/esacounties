@@ -7,9 +7,9 @@
 get_species(fips = "", state = "", county = "")
 }
 \arguments{
-\item{fips}{FIPS code(s) for the county to query}
+\item{fips}{list of FIPS code(s) for the county to query}
 
-\item{state}{Either a state name or abbreviation for the query}
+\item{state}{Either a state name or capitalied abbreviation for the query}
 
 \item{county}{Name of the county for the query}
 }

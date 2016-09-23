@@ -16,7 +16,7 @@ A data.frame (tibble) of state & county-level occurrence data
 Filter data for counties where a species is found
 }
 \examples{
-get_counties("Ursus horribilis")
+get_counties("Ursus arctos horribilis")
 }
 \seealso{
 \link{get_species}
