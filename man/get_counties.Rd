@@ -2,7 +2,7 @@
 % Please edit documentation in R/utils.R
 \name{get_counties}
 \alias{get_counties}
-\title{List counties where a species is found}
+\title{Filter data for counties where a species is found}
 \usage{
 get_counties(species)
 }
@@ -10,10 +10,10 @@ get_counties(species)
 \item{species}{Scientific name of the species to query}
 }
 \value{
-A tibble of state & county-level occurrence data
+A data.frame (tibble) of state & county-level occurrence data
 }
 \description{
-List counties where a species is found
+Filter data for counties where a species is found
 }
 \examples{
 get_counties("Ursus horribilis")

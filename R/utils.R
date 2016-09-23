@@ -1,9 +1,9 @@
 # BSD_2_clause
 
-#' List counties where a species is found
+#' Filter data for counties where a species is found
 #'
 #' @param species Scientific name of the species to query
-#' @return A tibble of state & county-level occurrence data
+#' @return A data.frame (tibble) of state & county-level occurrence data
 #' @seealso \link{get_species}
 #' @export
 #' @examples
@@ -12,16 +12,17 @@ get_counties <- function(species) {
   return(dplyr::filter(esacounties, Scientific == species))
 }
 
-#' List species found in a county or counties
+#' Filter data of species found in a county or counties
 #'
 #' @param fips FIPS code(s) for the county to query
 #' @param state Either a state name or abbreviation for the query
 #' @param county Name of the county for the query
-#' @return A tibble of state & county-level occurrence data
+#' @return A data.frame (tibble) of state & county-level occurrence data
 #' @seealso \link{get_counties}
 #' @export
 #' @examples
 #' get_species(state = "VA", county = "Clarke")
+#' get_species(state = "Virginia", county = "Clarke")
 #' get_species(fips = "48281")
 get_species <- function(fips = "", state = "", county = "") {
   if(length(fips) > 1) {
